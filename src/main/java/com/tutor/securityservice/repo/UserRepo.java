@@ -1,7 +1,7 @@
 package com.tutor.securityservice.repo;
 
 
-import model.User;
+import com.tutor.securityservice.model.User;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,4 +1,4 @@
-package model;
+package com.tutor.securityservice.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;

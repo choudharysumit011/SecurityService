@@ -4,19 +4,17 @@ import com.tutor.securityservice.dto.*;
 import com.tutor.securityservice.repo.UserRepo;
 import com.tutor.securityservice.service.AuthenticationService;
 import com.tutor.securityservice.service.JwtService;
-import model.LoginResponse;
-import model.User;
+import com.tutor.securityservice.model.LoginResponse;
+import com.tutor.securityservice.model.User;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Map;
 import java.util.Optional;
 
 
-@RequestMapping("/auth")
 @RestController
+@RequestMapping("/auth")
 public class AuthenticationController {
 
     private final JwtService jwtService;
@@ -29,6 +27,7 @@ public class AuthenticationController {
         this.authenticationService = authenticationService;
         this.userRepository = userRepository;
     }
+
 
     @PostMapping("/signup")
     public ResponseEntity<String> register(@RequestBody UserRegisterDto registerUserDto) {

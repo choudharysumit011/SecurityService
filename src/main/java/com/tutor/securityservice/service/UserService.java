@@ -1,6 +1,6 @@
 package com.tutor.securityservice.service;
 
-import model.User;
+import com.tutor.securityservice.model.User;
 import com.tutor.securityservice.repo.UserRepo;
 import org.springframework.stereotype.Service;
 
